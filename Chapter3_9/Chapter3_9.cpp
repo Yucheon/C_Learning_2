@@ -48,8 +48,10 @@ int main()
 	if ((items_flag & opt2) && !(items_flag & opt1))		//아이템3을 가지고 있으면서
 															//아이템2를 가지고 있지 않다면
 	{
-		items_flag ^= opt2;
-		items_flag ^= opt1;
+		items_flag ^= (opt2 + opt1);
+
+		/*items_flag ^= opt2;
+		items_flag ^= opt1;*/
 	}
 
 	cout << bitset<8>(items_flag) << endl;					//00001011
