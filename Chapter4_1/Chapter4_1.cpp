@@ -2,17 +2,19 @@
 
 using namespace std;
 
-int main()
+namespace work1::work11::work111
 {
-	int apple = 5;		//이 시점으로 부터 apple을 사용할 수 있다.
-	cout << apple << endl;		//5
+	int a = 1;
+	void doSomething()
 	{
-		cout << apple << endl;	//5
-		int apple = 1;
-		cout << apple << endl;	//1
+		a += 3;
 	}
 
-	cout << apple << endl;		//5
+}
+
+int main()
+{
+	work1::work11::work111::doSomething();
 
 	return 0;
 }
