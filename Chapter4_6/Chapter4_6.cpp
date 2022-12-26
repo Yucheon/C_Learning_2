@@ -12,7 +12,7 @@ int main()
 
 	hw += "I'm good";
 
-	cout << hw.length() << endl;
+	cout << hw.length() << endl;		//글자의 길이를 출력
 
 	return 0;
 }
