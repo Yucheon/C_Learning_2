@@ -1,0 +1,8 @@
+﻿  Chapter06_01.cpp
+C:\tortoise\C-Learning\Chapter06_01\Chapter06_01.cpp(9,32): warning C4311: '형식 캐스트': 'int *[]'에서 'int'(으)로 포인터가 잘립니다.
+C:\tortoise\C-Learning\Chapter06_01\Chapter06_01.cpp(9,32): warning C4302: '형식 캐스트': 'int *[]'에서 'int'(으)로 잘립니다.
+C:\tortoise\C-Learning\Chapter06_01\Chapter06_01.cpp(21,32): warning C4311: '형식 캐스트': 'int (*)[20]'에서 'int'(으)로 포인터가 잘립니다.
+C:\tortoise\C-Learning\Chapter06_01\Chapter06_01.cpp(21,32): warning C4302: '형식 캐스트': 'int (*)[20]'에서 'int'(으)로 잘립니다.
+C:\tortoise\C-Learning\Chapter06_01\Chapter06_01.cpp(22,31): warning C4311: '형식 캐스트': 'int *'에서 'int'(으)로 포인터가 잘립니다.
+C:\tortoise\C-Learning\Chapter06_01\Chapter06_01.cpp(22,31): warning C4302: '형식 캐스트': 'int *'에서 'int'(으)로 잘립니다.
+  Chapter06_01.vcxproj -> C:\tortoise\C-Learning\x64\Debug\Chapter06_01.exe
