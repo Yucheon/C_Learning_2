@@ -1,0 +1,3 @@
+﻿  Chpater06_07.cpp
+C:\tortoise\C-Learning\Chapter06_07\Chpater06_07.cpp(23,12): warning C4101: 'ss' :참조되지 않은 지역 변수입니다.
+  Chapter06_07.vcxproj -> C:\tortoise\C-Learning\Debug\Chapter06_07.exe
