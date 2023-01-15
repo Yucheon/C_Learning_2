@@ -5,18 +5,24 @@ using namespace std;
 
 typedef int* pint;
 
-void foo(int *&ptr)		//포인터 변수를 레퍼런스로 받는 방법
+void foo(int *ptr)
 {
-	cout << ptr<< " "<<&ptr << endl;
+	cout <<*ptr<<" " <<ptr << " " << &ptr << endl;
 }
+
 int main()
 {
-	int x = 5;
-	//int* ptr = &x;
-	pint ptr = &x;
+	int value = 5;
+
+	cout << value << " " << &value << endl;
+
+	int* ptr = &value;
+
+	cout << " 포인터 변수 ptr의 주소" << &ptr << endl;
 
 	foo(ptr);
-	//포인터에 대한 레퍼런스
-	
+
+	foo(&value);
+	//foo(5) 리터럴 값은 넣을 수 없음
 	return 0;
 }
