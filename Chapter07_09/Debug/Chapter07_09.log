@@ -1,2 +1,10 @@
 ﻿  Chapter07_09.cpp
-  Chapter07_09.vcxproj -> D:\따배씨\C-Learning\Debug\Chapter07_09.exe
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(20,17): warning C4804: '%': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(29,2): error C2664: 'void printNumbers(const std::array<int,10> &,bool (__cdecl *)(int))': 인수 2을(를) 'bool'에서 'bool (__cdecl *)(int)'(으)로 변환할 수 없습니다.
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(29,24): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(16,6): message : 'printNumbers' 선언을 참조하십시오.
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(29,2): message : 인수 목록 '(std::array<int,10>, bool)'을(를) 일치시키는 동안
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(30,2): error C2664: 'void printNumbers(const std::array<int,10> &,bool (__cdecl *)(int))': 인수 2을(를) 'bool'에서 'bool (__cdecl *)(int)'(으)로 변환할 수 없습니다.
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(30,25): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(16,6): message : 'printNumbers' 선언을 참조하십시오.
+D:\따배씨\C-Learning\Chapter07_09\Chapter07_09.cpp(30,2): message : 인수 목록 '(std::array<int,10>, bool)'을(를) 일치시키는 동안
