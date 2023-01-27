@@ -2,7 +2,7 @@
 
 using namespace std;
 
-struct Somthing			//두번째 구조체
+struct Something			//두번째 구조체
 {
 	int v1;
 	float v2;
@@ -10,7 +10,7 @@ struct Somthing			//두번째 구조체
 
 struct Other		//첫 번째 구조체
 {
-	Somthing st;
+	Something st;
 };
 
 int main()
