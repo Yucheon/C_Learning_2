@@ -1,0 +1,4 @@
+﻿  Chapter11_02.cpp
+C:\tortoise\C-Learning\Chapter11_02\Student.h(29,17): error C2248: 'Person::m_name': private 멤버('Person' 클래스에서 선언)에 액세스할 수 없습니다.
+C:\tortoise\C-Learning\Chapter11_02\Person.h(9,17): message : 'Person::m_name' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter11_02\Person.h(6,7): message : 'Person' 선언을 참조하십시오.
