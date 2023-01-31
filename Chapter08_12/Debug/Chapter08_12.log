@@ -1,0 +1,13 @@
+﻿  Chapter08_12.cpp
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(11,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(11,26): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(20,40): error C2245: 존재하지 않는 멤버 함수 'B::doSomething'을(를) Friend로 지정했습니다. 멤버 함수 시그니처가 오버로드와 일치하지 않습니다.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(23,9): error C2511: 'void B::doSomething(const A &)': 오버로드된 멤버 함수가 'B'에 없습니다.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(5,7): message : 'B' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(25,11): error C2248: 'A::m_value': private 멤버('A' 클래스에서 선언)에 액세스할 수 없습니다.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(17,6): message : 'A::m_value' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(14,7): message : 'A' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(33,3): error C2664: 'void B::doSomething(const int)': 인수 1을(를) 'A'에서 'const int'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(33,16): message : 이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(11,7): message : 'B::doSomething' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter08_12\Chapter08_12.cpp(33,3): message : 인수 목록 '(A)'을(를) 일치시키는 동안
