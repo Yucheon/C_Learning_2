@@ -1,0 +1,6 @@
+﻿  Chapter10_02.cpp
+C:\tortoise\C-Learning\Chapter10_01\Moster.h(26,3): error C2065: 'cout': 선언되지 않은 식별자입니다.
+C:\tortoise\C-Learning\Chapter10_01\Moster.h(26,18): error C2065: 'endl': 선언되지 않은 식별자입니다.
+C:\tortoise\C-Learning\Chapter10_01\Moster.h(31,10): error C2597: 비정적 멤버 'Monster::m_name'에 대한 참조가 잘못되었습니다.
+C:\tortoise\C-Learning\Chapter10_01\Moster.h(9,14): message : 'Monster::m_name' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter10_01\Moster.h(31,48): error C2065: 'endl': 선언되지 않은 식별자입니다.

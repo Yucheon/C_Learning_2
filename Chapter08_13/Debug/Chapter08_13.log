@@ -1,2 +1,2 @@
 ﻿  Chapter08_13.cpp
-  Chapter08_13.vcxproj -> C:\tortoise\C-Learning\Debug\Chapter08_13.exe
+C:\tortoise\C-Learning\Chapter08_13\Chapter08_13.cpp : fatal  error C1090: PDB API를 호출하지 못했습니다. 오류 코드 '3': C:\tortoise\C-Learning\Chapter08_13\Debug\vc143.pdb

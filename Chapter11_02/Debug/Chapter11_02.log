@@ -1,4 +1,5 @@
 ﻿  Chapter11_02.cpp
-C:\tortoise\C-Learning\Chapter11_02\Student.h(29,17): error C2248: 'Person::m_name': private 멤버('Person' 클래스에서 선언)에 액세스할 수 없습니다.
-C:\tortoise\C-Learning\Chapter11_02\Person.h(9,17): message : 'Person::m_name' 선언을 참조하십시오.
-C:\tortoise\C-Learning\Chapter11_02\Person.h(6,7): message : 'Person' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter11_02\Student.h(29,17): error C2662: 'std::string Person::getName(void)': 'this' 포인터를 'const Student'에서 'Person &'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter11_02\Student.h(29,10): message : 변환하면서 한정자가 손실됩니다.
+C:\tortoise\C-Learning\Chapter11_02\Person.h(23,14): message : 'Person::getName' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter11_02\Student.h(29,17): message : 인수 목록 '()'을(를) 일치시키는 동안

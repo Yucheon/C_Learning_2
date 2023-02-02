@@ -1,5 +1,2 @@
-﻿  Chapter06_21.cpp
-  Chapter07_01.cpp
-  코드를 생성하고 있습니다...
-Chapter07_01.obj : error LNK2005: _main이(가) Chapter06_21.obj에 이미 정의되어 있습니다.
+﻿Chapter07_01.obj : error LNK2005: _main이(가) Chapter06_21.obj에 이미 정의되어 있습니다.
 C:\tortoise\C-Learning\Debug\Chapter06_21.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
