@@ -12,7 +12,7 @@ public:
 		:m_x(x), m_y(y), m_z(z)
 	{}
 
-	friend std::ostream& operator << (std::ostream& out, const Point& point)
+	friend std::ostream& operator <<(std::ostream& out, const Point& point)
 	{
 		out << "(" << point.m_x << ", " << point.m_y << ", " << point.m_z << ")";
 

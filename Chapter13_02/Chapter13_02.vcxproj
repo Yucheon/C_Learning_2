@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{518f0efe-4e54-4947-b65f-6bd419cff480}</ProjectGuid>
+    <ProjectGuid>{24dc46aa-e137-49a5-aa3a-7b2df98f0cf8}</ProjectGuid>
     <RootNamespace>Chapter1302</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Chapter13_02.cpp" />
+    <ClCompile Include="MyArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyArray.h" />
