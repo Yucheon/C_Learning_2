@@ -1,0 +1,24 @@
+﻿  Chapter13_05.cpp
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(35,4): error C2955: 'A': 클래스 템플릿을(를) 사용하려면 템플릿 인수 목록이 필요합니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(9,1): message : 'A' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(35,11): error C2514: 'A': 클래스 템플릿을 생성할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(9,1): message : 'A' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(36,17): error C2514: 'A': 클래스 템플릿을 생성할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(9,1): message : 'A' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(37,14): error C2514: 'A': 클래스 템플릿을 생성할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(9,1): message : 'A' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(40,7): error C2662: 'void A<T>::doSomething(void)': 'this' 포인터를 'A'에서 'A<T> &'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(40,2): message : 원인: 'A'에서 'A<T>'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(40,2): message : 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(13,7): message : 'A<T>::doSomething' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(40,7): message : 인수 목록 '()'을(를) 일치시키는 동안
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(41,10): error C2662: 'void A<T>::doSomething(void)': 'this' 포인터를 'A'에서 'A<T> &'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(41,2): message : 원인: 'A'에서 'A<T>'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(41,2): message : 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(13,7): message : 'A<T>::doSomething' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(41,10): message : 인수 목록 '()'을(를) 일치시키는 동안
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(42,8): error C2662: 'void A<T>::doSomething(void)': 'this' 포인터를 'A'에서 'A<T> &'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(42,2): message : 원인: 'A'에서 'A<T>'(으)로 변환할 수 없습니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(42,2): message : 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(13,7): message : 'A<T>::doSomething' 선언을 참조하십시오.
+C:\tortoise\C-Learning\Chapter13_05\Chapter13_05.cpp(42,8): message : 인수 목록 '()'을(를) 일치시키는 동안
