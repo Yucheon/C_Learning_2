@@ -1,30 +1,28 @@
 #include <iostream>
-#include <string>
-using namespace std;
+#include <vector>
 
-class Something {//const 사용
+class Cents
+{
 public:
-	string s_value = "default";
+		int m_int=5;
 
-	const string& getValue() const	//const 사용
-	{
-		cout << "constversion" << endl;
-		return s_value; 
-	}		
-	string& getValue()				//const 미사용
-	{
-		cout << "no version" << endl;
-		return s_value; 
-	}					
+		int getCents() const 
+		{
+			return m_int;
+		}
+
+		void setCents(int i_int)
+		{
+			m_int = i_int;
+		}
+
 };
 
 int main()
 {
-	Something something;
-	something.getValue();		//no version
+	const Cents cents;
 
-	const Something somthing2;	//constversion
-	somthing2.getValue();
+	std::cout<<cents.getCents();
 
 	return 0;
 }

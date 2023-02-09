@@ -19,7 +19,7 @@ public:
 	}
 	int& getCents()
 	{
-		return m_cents;
+		return m_cents;  
 	}
 
 	 Cents operator + ( const Cents& c2)		//friend를 제거하고 this포인터로 대체

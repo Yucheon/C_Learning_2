@@ -1,0 +1,4 @@
+﻿  Chapter08_01_Revie.cpp
+C:\tortoise\C_Learning_2\Chapter08_01_Revie\Chapter08_01_Revie.cpp(30,16): error C2440: '초기화 중': 'initializer list'에서 'Friend'(으)로 변환할 수 없습니다.
+C:\tortoise\C_Learning_2\Chapter08_01_Revie\Chapter08_01_Revie.cpp(30,16): message : 소스 형식을 가져올 수 있는 생성자가 없거나 생성자 오버로드 확인이 모호합니다.
+C:\tortoise\C_Learning_2\Chapter08_01_Revie\Chapter08_01_Revie.cpp(32,2): error C3861: 'print': 식별자를 찾을 수 없습니다.

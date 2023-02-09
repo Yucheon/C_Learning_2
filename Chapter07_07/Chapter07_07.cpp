@@ -1,15 +1,13 @@
 #include <iostream>
 
-using namespace std;
-
-typedef int my_int;
-
-void print(char *value) {};
-void print(int value) {};
+void print(unsigned int x) {};
+void print(float x) {};
 
 int main()
 {
-	print(0);
-	print('a');	//int로 인식 char이 아니라
+	print((unsigned)'a');
+	print(0u);	
+	print(3.14f);
+
 	return 0;
 }

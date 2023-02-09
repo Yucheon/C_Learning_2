@@ -1,28 +1,35 @@
-#include<iostream>
-#include<array>
-#include<algorithm>
+#include <iostream>
+#include <array>
+#include <algorithm>
 
-using namespace std;
-
-void PrintArra(array<int, 5>& my_arr)
+void Array_size(std::array<int, 10> &here)
 {
-	cout << my_arr.size() << endl;
+	std::cout << here.size() << std::endl;
 }
+
+void Array_sorting(std::array<int, 10>& my)
+{
+	std::cout << "솔팅하기 전" << std::endl;
+	for (auto element : my)
+		std::cout << element<<", ";
+
+	std::cout << std::endl << "솔팅한 후" << std::endl;
+
+	std::sort(my.begin(), my.end());
+
+	for (auto element : my)
+		std::cout << element << ", ";
+}
+
 int main()
 {
-	//int array[5] = { 9,87,4,21,5 };
+	std::array<int, 10> my_array = { 5,3,9,4,7,8,6,1,2 };
 
-	array<int, 5>my_arr = { 1,21,3,40,5 };
+	std::cout << my_array[3] << " " << my_array.at(4) << std::endl;
 
-	for (auto element : my_arr)
-		cout << element << " ";
-	cout << endl;
+	Array_size(my_array);
 
-	std::sort(my_arr.begin(), my_arr.end());		//솔팅하여 배열의 값을 순서대로 정렬
-
-	for (auto element : my_arr)
-		cout << element << " ";
-	cout << endl;
+	Array_sorting(my_array);
 
 	return 0;
 }

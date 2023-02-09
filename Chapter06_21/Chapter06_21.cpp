@@ -1,23 +1,27 @@
 #include <iostream>
 #include <vector>
-using namespace std;
+#include <algorithm>
+
+void sort(std::vector<int> &there)
+{
+	std::cout << "솔팅하기 전" << std::endl;
+	for (auto& element : there)
+		std::cout << element;
+
+	std::sort(there.begin(), there.end());
+
+	std::cout << "솔팅한 후" << std::endl;
+	for (auto& element : there)
+		std::cout << element;
+}
 
 int main()
 {
-	int* my_arr = new int[5];
+	std::vector<int> vec{ 5,1,9,3,6 };
 
-	vector<int>arr = { 1,2,3,4,5 };
+	std::cout << vec.size() << std::endl;
 
-	arr.resize(10);
-
-	for (auto& itr : arr)
-		cout << itr << " ";
-	cout << endl;
-
-	cout << arr[1] << endl;
-	cout << arr.at(1) << endl;
-
-	delete[] my_arr;
+	sort(vec);
 
 	return 0;
 }
