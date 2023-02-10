@@ -2,26 +2,27 @@
 #include <vector>
 #include <algorithm>
 
-void sort(std::vector<int> &there)
+void sorting(std::vector<int> h)
 {
-	std::cout << "솔팅하기 전" << std::endl;
-	for (auto& element : there)
-		std::cout << element;
+	std::sort(h.begin(), h.end());
 
-	std::sort(there.begin(), there.end());
+	std::cout << "솔팅한 후 결과는" << std::endl;
 
-	std::cout << "솔팅한 후" << std::endl;
-	for (auto& element : there)
-		std::cout << element;
+	for (auto element : h)
+		std::cout << element << ", ";
+
 }
-
 int main()
 {
-	std::vector<int> vec{ 5,1,9,3,6 };
+	std::vector<int> vec{ 4,1,7,3,5 };
 
-	std::cout << vec.size() << std::endl;
+	std::cout <<"vec의 사이즈는"<< vec.size() << std::endl;
 
-	sort(vec);
+	//vec.resize(2);
+
+	//std::cout << vec.size() << vec.capacity() << std::endl;
+
+	sorting(vec);
 
 	return 0;
 }

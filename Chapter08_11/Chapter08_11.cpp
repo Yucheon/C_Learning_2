@@ -4,58 +4,40 @@ using namespace std;
 
 class Something
 {
-public:
-	class _init				//클래스 안에 클래스를 만듦
-	{
-	public:
-		_init()
-		{
-			s_value = 9876;	//Something클래스의 이너클래스인_init의생성자에서 S_value를 초기화
-		}
-	};
-
-private:
 	static int s_value;
 	int m_value;
-	  
-	static _init s_inintializer;	//이너 클래스를 스태틱으로 인스턴스 생성
 
 public:
-	Something()
-		:m_value(123)
-	{
-		
-	}
-	static int getValue()
+	static int S_getValue()		//스태틱 함수에 스태틱 리턴
 	{
 		return s_value;
 	}
 
-	int temp()
+	int s_temp()
 	{
-		return this->s_value;
+		return this->s_value;	//멤버 함수에 스태틱 리턴
+	}
+
+	//static void m_getValue()
+	//{
+	//	return m_value;			//스태틱 함수에 멤버 변수 리턴
+	//}
+
+	int m_temp()
+	{
+		return this->m_value;	//멤버 함수에 멤버 변수 리턴
 	}
 };
 
-int Something::s_value = 1024;
-Something::_init Something::s_inintializer;		//이너클래스의 인스턴스를 정의
+int Something::s_value = 5;
 
 int main()
 {
-	cout << Something::getValue() << endl;	//1024
+	cout << Something::S_getValue() << endl;		//스태틱으로 선언된 함수는 인스턴스를 생성하지 않아도 접근 가능
 
 	Something s1;
-	Something s2;
+	int(Something:: * fptr)() = &Something::s_temp;
 
-	cout << s1.getValue() << endl;			//1024
-	//cout << s1.s_value << endl;
-
-	int (Something:: * fptr1)() = &Something::temp;		//함수의 포인터를 선언하고 
-														//해당 포인터에 temp함수의 주소를 넣음
-
-	cout << (s2.*fptr1)() << endl;		//인스턴스 s2의 '디'함수포인터를 출력
-
-	int (* fptr2)() = &Something::getValue;
-
+	(s1.*fptr)();
 	return 0;
 }

@@ -1,28 +1,37 @@
 #include <iostream>
-#include <vector>
+#include <string>
 
-class Cents
+class SomeThing
 {
 public:
-		int m_int=5;
+	std::string m_value = "default";
 
-		int getCents() const 
-		{
-			return m_int;
-		}
+	std::string getValue()
+	{
+		std::cout <<"함수 호출 후 주소"<< this << std::endl;
+		return m_value;
+	};
 
-		void setCents(int i_int)
-		{
-			m_int = i_int;
-		}
-
+	const std::string& getValue() const
+	{
+		std::cout << "함수 호출 후 const의 주소"<<this << std::endl;
+		return m_value;
+	};
 };
 
 int main()
 {
-	const Cents cents;
+	SomeThing something;
 
-	std::cout<<cents.getCents();
+	const SomeThing st;
+
+	std::cout <<"기본 주소"<< & something << std::endl;
+
+	something.getValue()=10;
+
+	std::cout<<"const의 주소" << &st<< std::endl;
+
+	st.getValue();
 
 	return 0;
 }
