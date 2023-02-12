@@ -8,35 +8,35 @@ private:
 	int m_cents;
 
 
+
 public:
-	Cents(int cents=0)
+	void setCents(int a)
 	{
-		m_cents = cents;
+		m_cents = a;
 	}
-	int getCents()const
+	Cents(int a)
+	{
+		m_cents = a;
+	}
+
+	int getCents() const
 	{
 		return m_cents;
 	}
-	int& getCents()
-	{
-		return m_cents;  
-	}
 
-	 Cents operator + ( const Cents& c2)		//friend를 제거하고 this포인터로 대체
+	friend Cents operator + (const Cents& c1, const Cents& c2)
 	{
-	return Cents(this->getCents() + c2.getCents());
+		return Cents(c1.getCents() + c2.getCents());
 	}
 };
 
-//Cents operator + (const Cents& c1, const Cents& c2)
-//{
-//	return Cents(c1.getCents() + c2.getCents());
-//}
 int main()
 {
-	Cents cents1(6);  
-	Cents cents2(8);
+	Cents cent1(30);
+	Cents cent2(60);
 
-	cout << (cents1 + cents2+Cents(6)).getCents() << endl;	//Cents(6)는 익명객체
+	//cout << add(cent1, cent2).getCents() << endl;
+	cout << (cent1 + cent2+Cents(10)).getCents() << endl;
+
 	return 0;
 }
