@@ -1,67 +1,69 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 class Animal
 {
-protected :
-	std::string m_name;
+protected:
+	string m_name;
 
-public:
-	Animal(std::string name)
-		:m_name(name)
+public :
+	Animal(string name)
+		: m_name (name)
 	{}
 
-	string getName()
+public:
+	std::string getName()
 	{
 		return m_name;
 	}
 
-	virtual void speak() const
+	void virtual speak() const
 	{
-		cout << m_name << "    Nothing" << endl;
+		cout << m_name << " ??? " << endl;
 	}
 };
 
-class Dog:public Animal
+class Cat : public Animal
 {
-public:
-	Dog(std::string name)
-		:Animal(name)
-	{}
-	
-	void speak() const
-	{
-		cout << m_name <<"    wall wall" << endl;
-	}
-};
-
-class Cat :public Animal
-{
-public:
-	Cat(std::string name)
+public :
+	Cat(string name)
 		:Animal(name)
 	{}
 
 	void speak() const
 	{
-		cout << m_name <<"    meow meow" << endl;
+		cout << m_name << " Meow" << endl;
 	}
+};
+
+class Dog : public Animal
+{
+public:
+	Dog(string name)
+		:Animal(name)
+	{ }
+
+	void speak() const
+	{
+		cout << m_name << " Woof" << endl;
+	}
+
 };
 
 int main()
 {
-	Animal animal("zahir");
-	Cat cat("milo");
-	Dog dog("itki");
 
-	cat.speak();
-	dog.speak();
-	animal.speak();
+	Cat thiscat("this_cat");
+	Cat cats[] = { Cat("cat1"), Cat("cat2"), Cat("cat3") };
+	Dog dogs[] = { Dog("dog1"),Dog("dog2"),Dog("dog3") };
 
-	Animal* ptr_animal = &cat;
-	ptr_animal->speak();
+	Animal* animals[] = { &cats[0], &cats[1], &cats[2],&dogs[0],&dogs[1],&dogs[2] };
 
+	for (int i = 0; i < 6; ++i)
+	{
+		animals[i]->speak();
+	}
+	
 	return 0;
 }
